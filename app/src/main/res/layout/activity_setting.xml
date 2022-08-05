@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SettingActivity"
+    android:layout_margin="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvIncomeCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/btAddIncomeCategory"
+                android:textSize="18sp"
+                android:text="收入类别:">
+            </TextView>
+
+            <Button
+                android:id="@+id/btAddIncomeCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="+">
+            </Button>
+
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gvIncome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="5">
+        </GridView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvOutlayCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/btAddOutlayCategory"
+                android:textSize="18sp"
+                android:text="支出类别:">
+            </TextView>
+
+            <Button
+                android:id="@+id/btAddOutlayCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="+">
+            </Button>
+
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gvOutlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="5">
+        </GridView>
+
+    </LinearLayout>
+
+</LinearLayout>
